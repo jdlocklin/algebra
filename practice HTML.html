@@ -1,0 +1,192 @@
+<html>
+
+<head>
+      
+    
+</head>
+
+<body>
+
+    <script>
+    const euro = money => money *= 0.91;
+    const pesos = money => money *= 23.42;
+    const soles = money => money *= 3.40;
+    const bolivianos = money => money *= 6.89;
+    const yuan = money => money *= 7.10;
+    const australianDollars = money => money *= 1.65;
+    const yen = money => money *= 108.6;
+    const shillings = money => money *= 104.55;
+    const francs = money => money *= 0.96;
+    const dollars = money => money = money;
+    let price = 0;
+    let currency = '';
+    
+
+    function vacationWellSpent (money, country) {
+        switch (country) {
+            case 'USA':
+                price = dollars(money);
+                currency = ' dollars';
+                covid19 = 86,000;
+                break;
+            case 'Europe':
+                price = euro(money);
+                currency = ' euro';
+                covid19 = 288,000
+                break;
+            case 'Mexico':
+                price = pesos(money);
+                currency = ' pesos';
+                break;
+            case 'Peru':
+                price = soles(money);
+                currency = ' soles';
+                break;
+            case 'Bolivia':
+                price = bolivianos(money);
+                currency = ' bolivianos';
+                break;
+            case 'China':
+                price = yuan(money);
+                currency = ' yuan';
+                break;
+            case 'Australia':
+                price = australianDollars(money);
+                currency = ' Australian dollars';
+                break;
+            case 'Japan':
+                price = yen(money);
+                currency = ' yen';
+                break;
+            case 'Switzerland':
+                price = francs(money);
+                currency = ' francs';
+                break;
+            case 'Kenya':
+                price = shillings(money);
+                currency = ' shillings';
+                break;
+        }
+
+        document.writeln('You want to travel to ' + country + '. That trip will cost you ' + price + currency);
+
+    }
+
+    //vacationWellSpent(12345, 'Kenya');
+
+var allNumbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10','11', '12', '13', '14', '15', '16', '17', '18', '19', '20'];//numbers made into strings in order to match up with the string numbers of the euqation array
+var plusMinus = ['+', '-'];
+var three = [];
+
+function algebraEquation(equation) {
+  var list = [];
+  for (i = 0; i < equation.length; i++) {
+            list.push(equation[i]);//converts all of the indexed values of the string, equation, into the list list for iteration
+    };
+
+  for (i = 0; i < allNumbers.length; i++) {
+        for (j = 0; j < list.length; j++) {
+            if (list[i] === allNumbers[j]) {
+                three.push(list[i]);// pushes all numbers found in the equation array from 1-20 (allNumbers), into a new array of just three numbers
+                alert(three);
+            };         
+        };
+    };
+  
+const newMinusPlus = [];
+for (i = list.length - 3; i > plusMinus.length; i--) { //this nested ofr loop is meant to find out if the numbers in list are negative or positive iin the long run by extrating the negative and plus sign(s) in list.
+  for(j = 0; j < list.length; j++) {
+    if (list[i] === plusMinus[j]) {
+      newMinusPlus.push(list[i]);
+      alert(newMinusPlus);
+    };
+  };
+};
+
+if (three.length == 3) {// determines length of three and gives each of its items a value.
+    var firstNumber = three[0];
+    alert(firstNumber);
+    var secondNumber = three[1];
+    var thirdNumber = three[2];
+} else if (three.length == 4) {
+    var firstNumber = three[0];
+    var secondNumber = three[1];
+    var thirdNumber = three[2];
+    var fourthNumber = three[3];
+} else if (three.length == 5) {
+    var firstNumber = three[0];
+    var secondNumber = three[1];
+    var thirdNumber = three[2];
+    var fourthNumber = three[3];
+    var fifthNumber = three[4];
+} else if (three.length == 6) {
+    var firstNumber = three[0];
+    var secondNumber = three[1];
+    var thirdNumber = three[2];
+    var fourthNumber = three[3];
+    var fifthNumber = three[4];
+    var sixthNumber = three[5];
+} else {
+    alert('You have too many numbers!')
+}
+
+// if the length of three equals six items it must have pure 2 digit numbers
+if (three.length == 6) {
+    var f1 = firstNumber + secondNumber;
+    var f2 = thirdNumber + fourthNumber;
+    var f3 = fifthNumber + sixthNumber;
+    var a = Number(f1);
+    var b = Number(f2);
+    var c = Number(f3);
+} 
+if (three.length == 3) {
+    var a = Number(firstNumber);
+    var b = Number(secondNumber);
+    var c = Number(thirdNumber);
+}
+if (three.length == 4) {
+    a1 = firstNumber + secondNumber;
+    b2 = secondNumber + thirdNumber;
+    c3 = thirdNumber + fourthNumber;
+    if (Number(a1) < 20) {
+        a = a1;
+        break;
+    }
+    if (Number(b2) < 20) {
+        b = b2;
+        break;
+    }
+    if (Number(c3) < 20) {
+        c = c3;
+        break;
+    }
+}
+var negativeOrPositive = [];
+         for (k = 0; k < plusMinus.length; k++) {
+            for (l = 2; l > finalList.length; l--) {
+                if (finalList[k] === plusMinus[l]) {
+                    negativeOrPositive.push(list[k])
+                    alert(negativeOrPositive);
+                };
+            };
+        };
+        var negativeB = -b; // now we start the quadratic formula in order to get x through using a, b, and c.
+        var ac = a * c;                 // Quadratic Fomula: (-b+-√b^2-4ac) / 2a
+        var minusfourAC = 4 * ac;
+        var bSquared = Math.pow(b, 2);
+        var subtractInOrderToGetSquareRoot = bSquared - minusfourAC;
+        var squareRoot = Math.sqrt(subtractInOrderToGetSquareRoot);
+        //alert(squareRoot);
+        
+    };
+    algebraEquation('5x(x) + 3x - 13');
+    //,,,,,,,,,,,,,,,,,,,,,,,,,
+    //,,,,,,,,,,,,,,,,,,
+     
+
+    
+    </script>
+
+</body>
+
+</html>
