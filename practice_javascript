@@ -1,0 +1,13 @@
+let number = 50;
+console.log(number)
+
+function check(number, number2) {
+    if (number > number2) {
+        print("your first number" + number + " is the greatest")
+
+    } else {
+        print("your second number " + number2 +" is the greatest");
+    }
+}
+
+check(10, 45);
