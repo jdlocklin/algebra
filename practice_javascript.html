@@ -1,0 +1,45 @@
+<html>
+<body>
+    <script>
+    let number = 50;
+     console.log(number)
+
+    function check(number, number2) {
+        if (number > number2) {
+            alert("your first number" + number + " is the greatest")
+
+        } else {
+            alert("your second number " + number2 +" is the greatest");
+        }
+    }
+
+    check(10, 45);
+
+    function switcher(value) {
+        value = !value;
+        alert(value);
+        value === true? alert("truthy"): alert("not truthy");
+    };
+
+    switcher(true);
+
+    const food = "FOOD";
+
+    switch (food) {
+        case 'vegtables':
+            alert("EAT IT");
+            break;
+        case 'meat':
+            alert("EAT IT");
+            break;
+        case 'ice':
+            alert('DONT EAT IT');
+            break;
+        default:
+            alert("JUST EAT IT");
+        }
+
+    
+    </script>
+</body>
+</html>
