@@ -13,7 +13,7 @@
         }
     }
 
-    check(10, 45);
+    //check(10, 45);
 
     function switcher(value) {
         value = !value;
@@ -21,25 +21,27 @@
         value === true? alert("truthy"): alert("not truthy");
     };
 
-    switcher(true);
+    //switcher(true);
 
-    const food = "FOOD";
+    const sayHello = (firstName, lastName) => {
+        var helloMessage = alert("Hello " + firstName + " "+ lastName);
+        return helloMessage;
+    };
 
-    switch (food) {
-        case 'vegtables':
-            alert("EAT IT");
-            break;
-        case 'meat':
-            alert("EAT IT");
-            break;
-        case 'ice':
-            alert('DONT EAT IT');
-            break;
-        default:
-            alert("JUST EAT IT");
-        }
+    //sayHello("Jonathan", "Locklin")
 
-    
+    const hey = number => alert(number + number);
+
+    //hey(10)
+
+    var positions = [0.5, 7.49, 2.3998, 345.689];
+    alert(positions.length);
+    positions.pop();
+    positions.shift();
+    positions.unshift("IT", "WORKS");
+    positions.slice(0, 3);
+    alert(positions);
+
     </script>
 </body>
 </html>
