@@ -43,11 +43,17 @@
     alert(positions);
     */
 
-    let numberX = 20;
-    while(numberX > 15) {
-        alert("still greater");
-        numberX--;
-    }
+    let letters = "a";
+    let listOfLetters = ["b", "c", "d", "e", "f"];
+        for (let i = 0; i < listOfLetters.length; i++) {
+            let letters = letters + listOfLetters[i];
+            alert(letters);
+                if(letters === "abcd") {
+                    alert("stopped");
+                    break;
+                }
+        }
+         
 
     for (var x = 10; x > 0; x--) {
         alert(x);

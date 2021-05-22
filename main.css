@@ -1,0 +1,17 @@
+body {
+    background: aliceblue;
+    font-family: Arial;
+}
+
+.secondary{
+    background: azure;
+    font-family: Times New Roman;
+}
+
+h2 {color: grey;}
+a {color: blue;}
+
+p {
+    background: white;
+    padding: 10px;
+}

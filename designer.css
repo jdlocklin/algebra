@@ -1,0 +1,21 @@
+header {
+    background: green;
+    color: grey;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+header h1 {
+    margin: 0;
+}
+nav ul{
+    margin: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    background: black;
+}
